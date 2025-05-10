@@ -1,5 +1,5 @@
+import React from 'react';
 
-import { background } from 'storybook/internal/theming';
 import { TestimonialCard } from '../components/TestimonialCard.jsx'
 
 export default {
@@ -10,16 +10,23 @@ export default {
 export const Primary = {
   args : {
     name: 'TestimonialCard',
-    label: 'Solid',
-    primary: true
-  }
+    label: 'solid',
+    primary: true,
+    firstName: 'Sarah',
+    lastName: 'Dole',
+    userTag: 'sarahdole',
+    content: {
+      body: 'I\'ve been searching for high-quality abstract images for my design projects, and I\'m thrilled to have found this platform. The variety and depth of creativity are astounding!'
+    }
+  },
+  render: (args) => <TestimonialCard {...args} />
 }
 
 export const Secondary = {
   args : {
     ...Primary.args,
     primary: false,
-    label: 'Outline'
+    label: 'outline'
   }
   }
 
@@ -27,7 +34,7 @@ export const DarkMode = {
   args : {
     ...Primary.args,
     primary: false,
-    label: 'Outline'
+    label: 'outline'
   },
   parameters: {
     backgrounds: {
