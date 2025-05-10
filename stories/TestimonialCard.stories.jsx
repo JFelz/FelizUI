@@ -23,15 +23,15 @@ export const Secondary = {
   }
   }
 
-// export const DarkMode = {
-//   args : {
-//     ...Primary.args,
-//     primary: false,
-//     label: 'Outline'
-//   },
-//   parameters: {
-//     backgrounds: {
-//       default: 'dark'
-//     }
-//   }
-//   }
+export const DarkMode = {
+  args : {
+    ...Primary.args,
+    primary: false,
+    label: 'Outline'
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dark'
+    }
+  }
+  }
