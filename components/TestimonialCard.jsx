@@ -1,12 +1,13 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import '../styles/card.css';
+import '../styles/testimonialCard.css';
 
-export const TestimonialCard = ({ 
+export const TestimonialCard = ({
   firstName='Sarah', 
   lastName='Dole', 
   userTag='sarahdole', 
-  bodyContent = 'I\'ve been searching for high-quality abstract images for my design projects, and I\'m thrilled to have found this platform. The variety and depth of creativity are astounding!',
+  content={
+    body:''
+  } 
 }) => {
 
   return(
@@ -31,7 +32,7 @@ export const TestimonialCard = ({
               </div>
             </div>
             <div class="bottom-card">
-              <p>{bodyContent}</p>
+              <p>{content.body}</p>
             </div>
           </div>
         </section>
