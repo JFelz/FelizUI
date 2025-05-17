@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { BlogCard } from '../src/components/BlogCard';
+import { BlogCard } from '../src/components/BlogCard/BlogCard';
 
 export default {
   title: 'Components/Cards/Blog',

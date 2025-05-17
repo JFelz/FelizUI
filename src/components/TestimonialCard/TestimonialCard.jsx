@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/testimonialCard.css';
+import './testimonialCard.css';
 
 export const TestimonialCard = ({
   mode='primary',

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import { SearchBar } from '../src/components/SearchBar.jsx';
+import { SearchBar } from '../src/components/SearchBar/SearchBar.jsx';
 import { userData } from './fakeData.js';
 
 export default {

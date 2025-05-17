@@ -1,6 +1,6 @@
 
 import React from 'react';
-import '../../styles/blogCard.css';
+import './blogCard.css';
 
 export const BlogCard = ({
   variant='primary',
