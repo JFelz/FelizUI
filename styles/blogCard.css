@@ -95,6 +95,21 @@ body {
     border-style: solid;
     border-radius: 100px;
     color: #15803D;
+    font-size: 14px;
+  }
+  .bot-label.dark {
+    display: inline-block;
+    width: fit-content;
+    padding-left: .7em;
+    padding-right: .7em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    background-color: #161616;
+    border-color: #e4e4e4;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 100px;
+    color: #e4e4e4;
   }
   .bot-title {
     padding-top: 8px;
@@ -138,6 +153,11 @@ body {
     border-radius: 8px;
     box-shadow: rgb(165, 165, 165) 0px 1px 2px;
   }
+  .blog-card.dark {
+    background-color: #161616;
+    border-radius: 8px;
+    box-shadow: rgb(7, 7, 7) 0px 1px 2px;
+  }
   .image {
     height: 288px;
     width: 100%;
@@ -154,6 +174,16 @@ body {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
+  .bot-card.dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    height: 216px;
+    background-color: #161616;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
   .bot-label {
     display: inline-block;
     width: fit-content;
@@ -167,9 +197,27 @@ body {
     border-style: solid;
     border-radius: 100px;
     color: #15803D;
+    font-size: 14px;
+  }
+  .bot-label.dark {
+    display: inline-block;
+    width: fit-content;
+    padding-left: .7em;
+    padding-right: .7em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    background-color: #161616;
+    border-color: #e4e4e4;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 100px;
+    color: #e4e4e4;
   }
   .bot-title {
     padding-top: 8px;
+  }
+  .bot-title.dark {
+    color: #acacac
   }
   .bot-body {
     display: flex;
@@ -177,6 +225,9 @@ body {
     justify-content: center;
     height: auto;
     padding-top: 12px;
+  }
+  .bot-body.dark {
+    color: #acacac
   }
   .bot-link {
     display: flex;
@@ -205,6 +256,11 @@ body {
     border-radius: 8px;
     box-shadow: rgb(165, 165, 165) 0px 1px 2px;
   }
+  .blog-card.dark {
+    background-color: #161616;
+    border-radius: 8px;
+    box-shadow: rgb(7, 7, 7) 0px 1px 2px;
+  }
   .image {
     height: 288px;
     width: 100%;
@@ -221,71 +277,13 @@ body {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
-  .bot-label {
-    display: inline-block;
-    width: fit-content;
-    padding-left: .7em;
-    padding-right: .7em;
-    padding-top: .1em;
-    padding-bottom: .1em;
-    background-color: #F0FDF4;
-    border-color: #BBF7D0;
-    border-width: 1.5px;
-    border-style: solid;
-    border-radius: 100px;
-    color: #15803D;
-  }
-  .bot-title {
-    padding-top: 8px;
-  }
-  .bot-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    padding-top: 12px;
-  }
-  .bot-link {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: fit-content;
-    padding-top: 24px;
-    color: #4338CA;
-  }
-
-}
-
-@media screen and (min-width: 2449px) and (max-width: 3840px) {
-
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .blog-card {
-    width: 340px;
-    height: 504px;
-    background-color: rgb(250, 250, 250);
-    border-radius: 8px;
-    box-shadow: rgb(165, 165, 165) 0px 1px 2px;
-  }
-  .image {
-    height: 288px;
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  .bot-card {
+  .bot-card.dark {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 24px;
     height: 216px;
-    background-color: #FFF;
+    background-color: #161616;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
@@ -303,10 +301,26 @@ body {
     border-radius: 100px;
     color: #15803D;
     font-size: 14px;
-
+  }
+  .bot-label.dark {
+    display: inline-block;
+    width: fit-content;
+    padding-left: .7em;
+    padding-right: .7em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    background-color: #161616;
+    border-color: #e4e4e4;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 100px;
+    color: #e4e4e4;
   }
   .bot-title {
     padding-top: 8px;
+  }
+  .bot-title.dark {
+    color: #acacac
   }
   .bot-body {
     display: flex;
@@ -314,6 +328,9 @@ body {
     justify-content: center;
     height: auto;
     padding-top: 12px;
+  }
+  .bot-body.dark {
+    color: #acacac
   }
   .bot-link {
     display: flex;
@@ -323,5 +340,4 @@ body {
     padding-top: 24px;
     color: #4338CA;
   }
-
 }
