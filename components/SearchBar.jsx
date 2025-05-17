@@ -17,7 +17,7 @@ export const SearchBar = ({
     <div className={`searchbar-container ${mode}`}>
       <input 
       type="text" 
-      placeholder="Search..." 
+      placeholder="Search" 
       id="searchBar"
       className={`searchBar ${mode}`}
       onChange={debounce(handleSearch, 700)}
