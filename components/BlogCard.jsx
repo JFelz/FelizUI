@@ -6,6 +6,8 @@ export const BlogCard = ({
   mode='primary',
   content={
     image: '',
+    category: '',
+    title: '',
     body: '',
   },
 }) => {
@@ -38,10 +40,10 @@ export const BlogCard = ({
           </div>
           <div className={`bot-card ${mode}`}>
             <div className={`bot-label ${mode}`}>
-              Category
+              {content.category}
             </div>
             <div className={`bot-title ${mode}`}>
-              <h3>Top 5 Living Room Inspirations</h3>
+              <h3>{content.title}</h3>
             </div>
             <div className={`bot-body ${mode}`}>
               {content.body}

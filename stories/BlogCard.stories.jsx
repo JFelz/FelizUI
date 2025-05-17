@@ -18,6 +18,8 @@ export const Primary = {
     mode: 'primary',
     content: {
       image: '../public/BlogCard/interior.webp',
+      category: 'Category',
+      title: 'Top 5 Living Room Inspirations',
       body: 'Curated vibrants colors for your living, make it pop & calm in the same time.',
     },
     render: (args) => <BlogCard {...args} />
