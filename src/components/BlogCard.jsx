@@ -1,9 +1,9 @@
 
 import React from 'react';
-import '../styles/blogCard.css';
+import '../../styles/blogCard.css';
 
 export const BlogCard = ({
-  mode='primary',
+  variant='primary',
   content={
     image: '',
     category: '',
@@ -14,18 +14,9 @@ export const BlogCard = ({
 
   return (
     <>
-    <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"
-      />
-    </head>
-    <body>
       <section className='container'>
-        <div className={`blog-card ${mode}`}>
-          <div className={`image ${mode}`}>
+        <div className={`blog-card ${variant}`}>
+          <div className={`image ${variant}`}>
               <img 
               srcSet={content.image} 
               alt='main-img' 
@@ -38,17 +29,17 @@ export const BlogCard = ({
               }}
               />
           </div>
-          <div className={`bot-card ${mode}`}>
-            <div className={`bot-label ${mode}`}>
+          <div className={`bot-card ${variant}`}>
+            <div className={`bot-label ${variant}`}>
               {content.category}
             </div>
-            <div className={`bot-title ${mode}`}>
+            <div className={`bot-title ${variant}`}>
               <h3>{content.title}</h3>
             </div>
-            <div className={`bot-body ${mode}`}>
+            <div className={`bot-body ${variant}`}>
               {content.body}
             </div>
-            <div className={`bot-link ${mode}`}>
+            <div className={`bot-link ${variant}`}>
               <p href="https://www.linkedin.com/in/jfeliz/">
                 Read more
               </p>
@@ -64,7 +55,6 @@ export const BlogCard = ({
           </div>
         </div>
       </section>
-    </body>
     </>
   )
 }

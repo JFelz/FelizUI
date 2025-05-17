@@ -1,8 +1,11 @@
 {
-  "name": "happyui",
+  "name": "happy-ui",
   "version": "1.0.0",
   "description": "This is a reusable, robust component library for any Front-End applications.",
-  "main": "index.js",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "story": "storybook dev -p 6006",
@@ -23,6 +26,7 @@
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-onboarding": "^8.6.12",
     "@storybook/blocks": "^8.6.12",
+    "@storybook/builder-vite": "^8.6.14",
     "@storybook/experimental-addon-test": "^8.6.12",
     "@storybook/react": "^8.6.12",
     "@storybook/react-vite": "^8.6.12",
