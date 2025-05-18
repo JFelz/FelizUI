@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TestimonialCard } from '../components/TestimonialCard.jsx'
+import { TestimonialCard } from '../src/components/TestimonialCard/TestimonialCard.jsx'
 
 export default {
   title: 'Components/Cards/Testimonial',

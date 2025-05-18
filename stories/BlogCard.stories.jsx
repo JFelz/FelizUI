@@ -1,48 +1,45 @@
 
 import React from 'react';
 
-import { BlogCard } from '../components/BlogCard';
+import { BlogCard } from '../src/components/BlogCard/BlogCard';
 
 export default {
   title: 'Components/Cards/Blog',
   component: BlogCard,
   argTypes : {
-    mode: { options: ['primary', 'secondary', 'dark']},
+    variant: { options: ['primary', 'secondary', 'dark']},
   }
 }
 
-export const Primary = {
-  args : {
-    name: 'BlogCard',
-    label: 'solid',
-    mode: 'primary',
+const Template = (args) => <BlogCard {...args} />;
+
+
+export const Primary = Template.bind({});
+  Primary.args = {
+    variant: 'primary',
     content: {
-      image: '../public/BlogCard/interior.webp',
+      image: '/BlogCard/interior.webp',
       category: 'Category',
       title: 'Top 5 Living Room Inspirations',
       body: 'Curated vibrants colors for your living, make it pop & calm in the same time.',
     },
-    render: (args) => <BlogCard {...args} />
   }
-};
 
-export const Secondary = {
-  args : {
+export const Secondary = Template.bind({});
+  Secondary.args = {
     ...Primary.args,
-    mode: 'secondary',
-    label: 'outline'
+    variant: 'secondary',
   }
-}
 
-export const DarkMode = {
-  args : {
+
+export const DarkMode = Template.bind({});
+
+  DarkMode.args = {
     ...Primary.args,
-    mode: 'dark',
-    label: 'solid'
-  },
-  parameters: {
+    variant: 'dark',
+  }
+  DarkMode.parameters = {
     backgrounds: {
-      default: 'dark'
+      default: 'dark',
     }
   }
-}

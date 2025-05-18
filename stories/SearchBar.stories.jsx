@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-import { SearchBar } from '../components/SearchBar.jsx';
-import { userData } from '../fakeData.js';
+import { SearchBar } from '../src/components/SearchBar/SearchBar.jsx';
+import { userData } from './fakeData.js';
 
 export default {
   title: 'Components/Inputs/SearchBar',

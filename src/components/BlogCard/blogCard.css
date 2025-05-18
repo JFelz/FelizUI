@@ -115,7 +115,7 @@ body {
     padding-top: 8px;
   }
   .bot-title.dark {
-    color: #acacac
+    color: #e9e9e9;
   }
   .bot-body {
     display: flex;
@@ -217,7 +217,7 @@ body {
     padding-top: 8px;
   }
   .bot-title.dark {
-    color: #acacac
+    color: #e9e9e9;
   }
   .bot-body {
     display: flex;
@@ -227,7 +227,7 @@ body {
     padding-top: 12px;
   }
   .bot-body.dark {
-    color: #acacac
+    color: #acacac;
   }
   .bot-link {
     display: flex;
@@ -320,7 +320,7 @@ body {
     padding-top: 8px;
   }
   .bot-title.dark {
-    color: #acacac
+    color: #e9e9e9;
   }
   .bot-body {
     display: flex;

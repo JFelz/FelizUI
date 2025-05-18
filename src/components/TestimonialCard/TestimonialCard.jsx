@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/testimonialCard.css';
-import { background } from 'storybook/internal/theming';
+import './testimonialCard.css';
 
 export const TestimonialCard = ({
   mode='primary',
