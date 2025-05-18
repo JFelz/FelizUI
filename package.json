@@ -1,16 +1,21 @@
 {
-  "name": "fzui",
-  "version": "1.0.0",
+  "name": "feliz-ui",
+  "version": "1.0.10",
   "description": "This is a reusable, robust component library for any Front-End applications.",
   "type": "module",
   "files": ["dist"],
-  "main": "./dist/fzui.umd.cjs",
-  "module": "./dist/fzui.js",
+  "main": "./dist/feliz-ui.cjs.js",
+  "module": "./dist/feliz-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/fzui.js",
-      "require": "./dist/fzui.umd.cjs"
-    }
+      "import": "./dist/feliz-ui.es.js",
+      "require": "./dist/feliz-ui.cjs.js"
+    },
+    "./style.css": "./dist/feliz-ui.css"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

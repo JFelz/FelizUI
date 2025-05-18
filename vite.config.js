@@ -1,9 +1,9 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { defineConfig } from 'vitest/config';
+import { defineConfig } from 'vite';
 
-import { storybookTest } from '@storybook/experimental-addon-test/vitest-plugin';
+import { resolve } from 'path';
 
 import react from '@vitejs/plugin-react';
 
@@ -15,9 +15,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.js'),
-      name: 'fzui',
+      name: 'feliz-ui',
       // the proper extensions will be added
-      fileName: (format) => `fzui.${format}.js`,
+      fileName: (format) => `feliz-ui.${format}.js`,
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
@@ -33,27 +33,5 @@ export default defineConfig({
         },
       },
     },
-  },
-  test: {
-    workspace: [
-      {
-        extends: true,
-        plugins: [
-          // The plugin will run tests for the stories defined in your Storybook config
-          // See options at: https://storybook.js.org/docs/writing-tests/test-addon#storybooktest
-          storybookTest({ configDir: path.join(dirname, '.storybook') }),
-        ],
-        test: {
-          name: 'storybook',
-          browser: {
-        enabled: true,
-        headless: true,
-        name: 'chromium',
-        provider: 'playwright'
-      },
-          setupFiles: ['.storybook/vitest.setup.js'],
-        },
-      },
-    ],
   },
 });
